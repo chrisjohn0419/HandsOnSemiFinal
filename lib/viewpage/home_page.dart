@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   getData() async {
-    posts = await RemoteService().getPosts();
+    posts = await Connection().getPosts();
     if (posts != null) {
       setState(() {
         isLoaded = true;
@@ -35,6 +35,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: const Icon(Icons.post_add_rounded),
         title: const Center(
             child: Text('Posts')),
       ),
