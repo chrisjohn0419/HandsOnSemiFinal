@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         leading: const Icon(Icons.post_add_rounded),
-        title: const Center(
+        title: const Center(git
             child: Text('Posts')),
       ),
       body: Visibility(
